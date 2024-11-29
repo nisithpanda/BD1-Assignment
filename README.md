@@ -12,7 +12,7 @@ Parse the input as a float to calculate the total cart price.
 
 Return the result as a string.
 
-API Call: <http://localhost:3000/cart-total?newItemPrice=1200&cartTotal=0>
+API Call: <http://localhost:3010/cart-total?newItemPrice=1200&cartTotal=0>
 
 Expected Output: 1200
 
@@ -34,7 +34,7 @@ If the Membership status = true, then the discount percentage is applied
 
 If the Membership status = false, no discount is applied
 
-API Call: <http://localhost:3000/membership-discount?cartTotal=3600&isMember=true>
+API Call: <http://localhost:3010/membership-discount?cartTotal=3600&isMember=true>
 
 Expected Output: 3240
 
@@ -52,7 +52,7 @@ Parse the cartTotal input as float to calculate the cart amount after applying t
 
 Return the result as a string.
 
-API Call: <http://localhost:3000/calculate-tax?cartTotal=3600>
+API Call: <http://localhost:3010/calculate-tax?cartTotal=3600>
 
 Expected Output: 180
 
@@ -74,7 +74,7 @@ If the shippingMethod = Standard, the delivery days will be 1 day per 50 kms.
 
 If the shippingMethod = Express, the delivery days will be 1 day per 100 kms.
 
-API Call: <http://localhost:3000/estimate-delivery?shippingMethod=express&distance=600>
+API Call: <http://localhost:3010/estimate-delivery?shippingMethod=express&distance=600>
 
 Expected Output: 6
 
@@ -96,7 +96,7 @@ Note: The formula to calculate shipping cost would be:
 
 weight * distance * 0.1 where weight is 2 kgs.
 
-API Call: <http://localhost:3000/shipping-cost?weight=2&distance=600>
+API Call: <http://localhost:3010/shipping-cost?weight=2&distance=600>
 
 Expected Output: 120
 
@@ -114,7 +114,7 @@ Parse the purchaseAmount input as float to calculate the loyalty points based on
 
 Return the result as a string.
 
-API Call: <http://localhost:3000/loyalty-points?purchaseAmount=3600>
+API Call: <http://localhost:3010/loyalty-points?purchaseAmount=3600>
 
 Expected Output: 7200
 
