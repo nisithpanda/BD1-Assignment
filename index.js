@@ -50,7 +50,7 @@ app.get('/calculate-tax', (req, res) => {
 
   let tax = (cartTotal * taxRate) / 100;
 
-  res.send(result.toString());
+  res.send(tax.toString());
 });
 
 /***
