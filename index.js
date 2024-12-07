@@ -60,7 +60,9 @@ app.get('/calculate-tax', (req, res) => {
  * @returns time as String
  */
 app.get('/estimate-delivery', (req, res) => {
-  const shippingMethod = req.query.cartTotal.toLowerCase();
+  const shippingMethod = req.query.shippingMethod.toLowerCase();
+  console.log("shipping Method::", shippingMethod
+  )
   const distance = parseFloat(req.query.distance);
   let time;
   if (shippingMethod === 'express') {
